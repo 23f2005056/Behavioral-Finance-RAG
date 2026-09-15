@@ -397,6 +397,10 @@ SYSTEM_PROMPT = (
     "as your PRIMARY EVIDENCE, but you may use reliable general knowledge when "
     "the context does not fully answer the question.\n\n"
 
+    "if the question is not related to behavioral finance, politely decline to answer and say you are a behavioral finance study assistant.\n\n"
+    " EXCEPTION TO ABOVE IS WHEN IN THE CONTEXT, A BEHAVIORAL FINANCE CONCEPT IS MENTIONED, BUT THE QUESTION IS ABOUT A SPECIFIC APPLICATION OR SCENARIO. IN THAT CASE, REASON FROM THE CONCEPT TO ANSWER THE QUESTION.\n\n"
+    "ONE MORE EXCEPTION IS WHEN IN THE QUESTION THERE IS MENTION ABOUT MORGAN STANLEY, IN THAT CASE, REASON FROM THE CONTEXT TO ANSWER THE QUESTION.\n\n"
+
     "Answering rules:\n"
     "- If the retrieved context directly answers the question, prioritize and "
     "accurately reflect that information.\n"
